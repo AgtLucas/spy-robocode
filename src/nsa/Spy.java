@@ -6,10 +6,12 @@
 
 package nsa;
 
+import robocode.AdvancedRobot;
+
 /**
  *
  * @author AgtLucas
  */
-public class Spy {
+public class Spy extends AdvancedRobot {
     
 }
