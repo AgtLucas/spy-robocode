@@ -18,9 +18,11 @@ public class Spy extends AdvancedRobot {
     double previousEnergy = 100;
     int movementDirection = 1;
     int gunDirection = 1;
+    
     public void run() {
       setTurnGunRight(99999);
     }
+    
     public void onScannedRobot(
         ScannedRobotEvent e) {
           // Stay at right angles to the opponent
