@@ -6,6 +6,7 @@
 
 package nsa;
 
+import java.awt.Color;
 import robocode.AdvancedRobot;
 import robocode.ScannedRobotEvent;
 
@@ -20,14 +21,20 @@ public class Spy extends AdvancedRobot {
     int gunDirection = 1;
     
     public void run() {
-      setTurnGunRight(99999);
+        // Set colors
+        setBodyColor(Color.black);
+        setGunColor(Color.black);
+        setRadarColor(Color.black);
+        setBulletColor(Color.black);
+        setScanColor(Color.black);
+        
+        setTurnGunRight(99999);
     }
     
     public void onScannedRobot(
         ScannedRobotEvent e) {
           // Stay at right angles to the opponent
-          setTurnRight(e.getBearing()+90-
-             30*movementDirection);
+        setTurnRight(e.getBearing()+90-30*movementDirection);
 
          // If the bot has small energy drop,
         // assume it fired
