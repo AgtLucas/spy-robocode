@@ -8,6 +8,7 @@ package nsa;
 
 import java.awt.Color;
 import robocode.AdvancedRobot;
+import robocode.RobotDeathEvent;
 import robocode.ScannedRobotEvent;
 
 /**
@@ -19,6 +20,7 @@ public class Spy extends AdvancedRobot {
     double previousEnergy = 100;
     int movementDirection = 1;
     int gunDirection = 1;
+    private int wallMargin = 60; 
     
     public void run() {
         // Set colors
@@ -57,5 +59,9 @@ public class Spy extends AdvancedRobot {
         // Track the energy level
         previousEnergy = e.getEnergy();
     }
+    
+    public void onRobotDeath(RobotDeathEvent e) {
+	// Implement this
+    }  
     
 }
