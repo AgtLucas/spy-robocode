@@ -8,6 +8,7 @@ package nsa;
 
 import java.awt.Color;
 import robocode.AdvancedRobot;
+import robocode.BulletMissedEvent;
 import robocode.RobotDeathEvent;
 import robocode.ScannedRobotEvent;
 
@@ -62,6 +63,10 @@ public class Spy extends AdvancedRobot {
     
     public void onRobotDeath(RobotDeathEvent e) {
 	// Implement this
-    }  
+    }
+    
+    public void onBulletMissed(BulletMissedEvent e) {
+        // Implement this
+    }
     
 }
