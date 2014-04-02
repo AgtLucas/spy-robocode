@@ -62,7 +62,7 @@ public class Spy extends AdvancedRobot {
     }
     
     public void onRobotDeath(RobotDeathEvent e) {
-	// Implement this
+        e.getName();
     }
     
     public void onBulletMissed(BulletMissedEvent e) {
